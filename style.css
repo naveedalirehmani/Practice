@@ -1,0 +1,34 @@
+button{
+    border:1px solid black;
+    padding:1rem;
+}
+
+span{
+    border:4px solid red;
+    padding:1rem;
+    position:relative;
+    display: inline-block;
+    border-radius:50%;
+}
+span:before{
+    border:3px solid transparent;
+    border-top:4px solid blue;
+    /* border-left:4px solid blue; */
+    content:"";
+    padding:1rem;
+    position:absolute;
+    top:-4px;
+    left:-4px;
+    border-radius:50%;
+    animation:loaderAnimation 1s infinite linear;
+}
+@keyframes loaderAnimation{
+    0%{
+        transform:ro(0deg)
+    }
+    100%{ 
+        transform:rotate(360deg);
+    }
+}
+
+
